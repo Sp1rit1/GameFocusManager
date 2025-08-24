@@ -8,7 +8,6 @@ class WorkerManager:
         self.project_root = Path(os.getcwd())
         self.worker_script = self.project_root / "focus_worker.sh"
         self.pid_file = Path("/tmp/game_focus_manager.pid")
-        self.log_file = Path("/tmp/game_focus_manager.log")
 
     def is_running(self) -> (bool, int):
         if not self.pid_file.exists():
@@ -63,12 +62,3 @@ class WorkerManager:
         except Exception as e:
             print(f"Failed to stop worker: {e}")
             return False
-
-
-    def get_log_tail(self, lines: int = 10) -> list[str]:
-        if not self.log_file.exists():
-            return ["Log file has not been created yet."]
-        try:
-            return self.log_file.read_text().splitlines()[-lines:]
-        except Exception as e:
-            return [f"Error reading log file: {e}"]

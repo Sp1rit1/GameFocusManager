@@ -34,11 +34,6 @@ wheels/
 *.egg
 MANIFEST
 
-# User configuration files (NEVER commit user-specific configs)
-/games.json
-/focus_worker.sh.bak
-/app/*.py.bak
-
 # Log and PID files (NEVER commit runtime files)
 *.log
 *.pid

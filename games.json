@@ -1,0 +1,8 @@
+{
+  "games_to_watch": [
+    "dota2",
+    "witcher3.exe"
+  ],
+  "fps_limit_active": 200,
+  "fps_limit_inactive": 2
+}
