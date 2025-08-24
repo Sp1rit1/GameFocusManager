@@ -34,28 +34,18 @@ Game Focus Manager
 Установка и Настройка
 
 1. Установка зависимостей (для Fedora/Nobara):
-code Bash
-IGNORE_WHEN_COPYING_START
-IGNORE_WHEN_COPYING_END
 
-    
 sudo dnf install python3-pyside6 jq kdotool mangohud
-
-  
 
 2. Настройка:
 
-    Склонируйте репозиторий: git clone https://github.com/YourUsername/Game-Focus-Manager.git
+    Склонируйте репозиторий
 
-    Перейдите в папку проекта: cd Game-Focus-Manager
+    Перейдите в папку проекта
 
     Откройте файл games.json и добавьте в список games_to_watch имена процессов ваших игр.
 
 3. Запуск приложения:
-code Bash
-IGNORE_WHEN_COPYING_START
-IGNORE_WHEN_COPYING_END
-
     
 python3 main.py
 
@@ -66,12 +56,7 @@ python3 main.py
 4. Настройка Steam:
 
     Для каждой игры из вашего списка games.json установите Параметры запуска в Steam:
-    code Code
-
-IGNORE_WHEN_COPYING_START
-IGNORE_WHEN_COPYING_END
-
-    
+   
 mangohud %command%
 
   
