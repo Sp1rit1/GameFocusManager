@@ -1,0 +1,53 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual Environment
+/venv/
+/.venv/
+/ENV/
+/env/
+/virtualenv/
+/venv.*.*/
+
+# PyCharm
+.idea/
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# User configuration files (NEVER commit user-specific configs)
+/games.json
+/focus_worker.sh.bak
+/app/*.py.bak
+
+# Log and PID files (NEVER commit runtime files)
+*.log
+*.pid
+
+# OS-generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
